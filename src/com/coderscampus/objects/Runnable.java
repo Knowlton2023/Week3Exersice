@@ -1,18 +1,20 @@
 package com.coderscampus.objects;
 
+import java.util.Scanner;
+
 public class Runnable {
 
 	public static void main(String[] args) {
-
-//		Number number1 = new Number();
-//
-//		number1.number = 55;
-//		
-//		System.out.println(number1.getNumber());
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Type a number between 50 and 300");
+		String number = scanner.nextLine();
 		
-		Scanner scanner = new Scanner(system.in);
+		NumberService newNumber = new NumberService();
+		newNumber.setNumber(number);
 		
-	
+		System.out.println("The number you typed in was: " + newNumber.getNumber());
+		
+		scanner.close();
 	}
 
 }
