@@ -1,9 +1,7 @@
 package com.coderscampus.objects;
 
 public class NumberService {
-
 	String number;
-	
 	
 	Integer getNumber() {
 		Integer convertedNumber = Integer.parseInt(number);
@@ -16,9 +14,5 @@ public class NumberService {
 
 	void setNumber (String number) {
 		this.number = number;
-		
 	}
-	
-	
-
 }
